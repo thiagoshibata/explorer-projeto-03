@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* Foi necessário inserir a font individualmente nos elementos abaixo, pois aplicando-a somente no body nao funcionaria */
 body,
 input,
 button,
@@ -16,6 +17,7 @@ body {
   background: #e5e5e5;
 }
 
+/* Backgroud preto da parte superior da página */
 body::before {
   content: "";
   width: 100%;
@@ -33,6 +35,7 @@ body::before {
   width: 736px;
   margin: 0 auto;
 }
+
 
 header {
   width: 319px;
