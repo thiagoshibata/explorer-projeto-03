@@ -20,12 +20,21 @@
       </header>
       <form action="">
         <fieldset>
-          <legend>Informações do Evento</legend>
-          <div class="input-wrapper">
-            <label for="event-title"
-              >Título do evento <span>(mínimo 8 caractéres)</span>
-            </label>
-            <input type="text" id="event-title" />
+          <!-- fieldset wrapper : criado para corrigir um bug em que o flex direction nao se aplica ao fieldset, ou seja, prejudica os espaçamentos originais do projeto -->
+          <div class="fieldset-wrapper">
+            <legend>Informações do Evento</legend>
+            <div class="input-wrapper">
+              <label for="event-title">
+                Título do evento <span>(mínimo 8 caractéres)</span>
+              </label>
+              <input type="text" id="event-title" />
+            </div>
+            <div class="input-wrapper">
+              <label for="event-link">
+                Link do evento <span>(comece com https://)</span>
+              </label>
+              <input type="text" id="event-link" />
+            </div>
           </div>
         </fieldset>
       </form>
