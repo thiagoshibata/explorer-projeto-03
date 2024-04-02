@@ -63,7 +63,7 @@ form {
   background: #fafafc;
   margin-top: 38px;
   padding: 64px;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
   min-height: 300px;
 
   display: flex;
@@ -199,4 +199,36 @@ fieldset legend {
   background-image: url("data:image/svg+xml,%0A%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 11.17L1.83 7L0.410004 8.41L6 14L18 2L16.59 0.589996L6 11.17Z' fill='%2342D3FF'/%3E%3C/svg%3E ");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+footer {
+  background: #f0f0f4;
+
+  height: 136px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px 64px;
+
+  margin-bottom: 100px;
+  border-top: 1px solid #d6d6d6;
+  border-radius: 0 0 8px 8px;
+}
+
+footer .button {
+  height: 56px;
+  border-radius: 8px;
+  border: 0;
+  background: #04d361;
+
+  font-family: "Archivo";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: white;
+}
+
+footer .button:hover {
+  background: #066a33;
 }
