@@ -18,7 +18,7 @@
         <h1>Crie e compartilhe seu evento.</h1>
         <p>O primeiro passo, é preencher esse formulário de inscrição.</p>
       </header>
-      <form action="">
+      <form id="form-event" action="">
         <fieldset>
           <!-- fieldset wrapper : criado para corrigir um bug em que o flex direction nao se aplica ao legend que está dentro do fieldset, ou seja, prejudica os espaçamentos originais do projeto -->
           <div class="fieldset-wrapper">
@@ -28,7 +28,7 @@
               <label for="event-title">
                 Título do evento <span>(mínimo 8 caractéres)</span>
               </label>
-              <input type="text" id="event-title" />
+              <input type="text" id="event-title" required minlength="8" />
             </div>
 
             <div class="input-wrapper">
@@ -111,7 +111,12 @@
         </fieldset>
       </form>
       <footer>
-        <input class="button" type="submit" value="Salvar evento" />
+        <input
+          class="button"
+          type="submit"
+          value="Salvar evento"
+          form="form-event"
+        />
       </footer>
     </div>
   </body>
